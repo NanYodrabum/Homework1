@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        .form {
+            border: 1px solid black;
+            border-radius: 10px;
+            padding: 20px;
+            width: 100%;
+        }
+        .form-control {
+            width: 70%;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            height: 40px;
+        }
+        textarea.form-control {
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <a href="./index.html">Home</a> |
+        <a href="./education.html">Eduction</a> |
+        <a href="./work.html">Work Experience</a> |
+        <a href="#">Contact Me</a> |
+    </div>
+    <hr />
+    <h1>Contact Me</h1> 
+    <div class="form">
+        <p>Enter your info..</p>
+        <form ACTION="https://jkorpela.fi/cgi-bin/echo.cgi">
+        <div class="form-a">
+            <label for="name">Your name:</label><br>
+            <input type="text" id="name" name="name" class="form-control"><br><br>
+        </div>
+
+        <div class="form-a">
+            <label for="email">Your E-mail:</label><br>
+            <input type="text" id="email" name="email" class="form-control"><br>
+        </div>
+
+        <div class="form-a">   
+            <p>Gender</p>
+            <select id="Gender" name="Gender" class="form-control">
+                <option value="" selected disabled>Select..</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="LGBT">LGBT</option>
+            </select> 
+        </div> 
+
+        <div class="form-a">
+            <p>Message</p>
+             <textarea name="message" class="form-control" ></textarea>
+            <br><br>
+        </div>
+        
+        <div class="form-a">
+             <input type="submit" value="Send">
+             <input type="reset" value="Clear">
+        </div>
+        </form>     
+</body>
+</html>
